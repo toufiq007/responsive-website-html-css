@@ -19,6 +19,15 @@
 html {
     font-size: 62.5%;
 }
+.section-heading{
+    font-size: 10rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-shadow: .5rem .5rem .5rem #000;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
 /* common styles ends */
 
 
@@ -32,15 +41,7 @@ html {
     justify-content: space-evenly ;
     align-items: center;
 }
-.section-heading{
-    font-size: 10rem;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 900;
-    text-shadow: .5rem .5rem .5rem #000;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
+
 .section-1-icons i{
     font-size: 20rem;
     color: #a79a2d;
@@ -55,9 +56,95 @@ html {
     transition: all 0.3s 0.3s;
 
 }
-
-
 /* section 1 styles ends */
+
+
+/* section 2 starts */
+.section-2{
+    width: 100%;
+    /* height: 100vh; */
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card{
+    margin-top: 5rem;
+    width: 30rem;
+    background-color: #a79a2d;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;
+    position: relative;
+    transform: rotateY(20deg)  skewY(-1deg);
+    transition: all 0.4s;
+}
+.card:hover{
+    transform: translateY(-2rem) rotateY(20deg) skewY(-2deg);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+.card::before{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background: #817824;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+
+}
+.card::after{
+    content: '';
+    width: 100%;
+    height: 1rem;
+    background: #8f8317;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+
+}
+.card-img{
+    width: 100%;
+}
+.card-name{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+.card-btn{
+    width: 70%;
+    background-color: #111;
+    color: #fff;
+    /* padding: ; */
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    box-shadow: -.2rem -.2rem -.2rem #000;
+
+}
+/* section 2 ends */
 
 
 
