@@ -43,11 +43,12 @@ html {
     justify-content: center;
     box-shadow: .3rem .3rem .3rem #000;
     /* display: none; */
-    transition: all 0.5s;
+    transition: top 0.5s;
 
  }
  .navbar.change{
     top: 0;
+    transition: top 0.5s .2s;
  }
 .navbar-link{
     color: #aaa;
